@@ -35,6 +35,7 @@ app.post('/api/logout', (req, res) => {
 	})
 })
 
+
 app.post('/api/database', (req, res) => {
 	return res.json({ status: 'ok', data: req.session.quote || "[not set yet]" })
 })
