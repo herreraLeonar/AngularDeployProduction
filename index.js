@@ -49,4 +49,4 @@ app.get('*', (req, res) => {
 	return res.sendFile(path.join(__dirname, '../MDFront/dist/index.html'))
 })
 
-app.listen(1234, _ => console.log('Up'))
+app.listen(4200, _ => console.log('Up angular port: 4200'))
