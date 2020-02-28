@@ -11,7 +11,7 @@ create swap
 
 # free -h
 
-# sudo /bin/dd if=/dev/zero of=/var/swap.1 bs=1M count=3024
+# sudo /bin/dd if=/dev/zero of=/var/swap.1 bs=1M count=8196
 
 # sudo /sbin/mkswap /var/swap.1
 
@@ -28,7 +28,7 @@ restart instance aws
 
 # set NODE_OPTIONS=--max-old-space-size=4096
 
-# ng build --prod --build-optimizer=false
+# node --max_old_space_size=4096 ./node_modules/.bin/ng build --prod
 
 
 # cd ../AngularDeployProduction
