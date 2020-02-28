@@ -9,24 +9,28 @@ For prod build, run following command:
 
 create swap
 
-#free -h
+# free -h
 
-#sudo /bin/dd if=/dev/zero of=/var/swap.1 bs=1M count=3024
-#sudo /sbin/mkswap /var/swap.1
-#sudo chmod 600 /var/swap.1
-#sudo /sbin/swapon /var/swap.1
-#sudo swapon --show
+# sudo /bin/dd if=/dev/zero of=/var/swap.1 bs=1M count=3024
+
+# sudo /sbin/mkswap /var/swap.1
+
+# sudo chmod 600 /var/swap.1
+
+# sudo /sbin/swapon /var/swap.1
+
+# sudo swapon --show
 
 To enable it by default after reboot, add this line to /etc/fstab:
-#/var/swap.1 swap swap defaults 0 0
+# /var/swap.1 swap swap defaults 0 0
 
 restart instance aws
 
-#set NODE_OPTIONS=--max-old-space-size=4096
+# set NODE_OPTIONS=--max-old-space-size=4096
 
-#ng build --prod --build-optimizer=false
+# ng build --prod --build-optimizer=false
 
 
-#cd ../AngularDeployProduction
+# cd ../AngularDeployProduction
 
 # pm2 start index.js
